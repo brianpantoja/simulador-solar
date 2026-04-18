@@ -883,3 +883,20 @@ body::before {
   .equipo-grid > .total-field { grid-column: 1 !important; grid-row: unset !important; }
   .sim-header    { padding: 1rem; }
 }
+/* Ajuste para alinear el select de tipo de cable */
+.cableado-select-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.cableado-select-group select {
+  margin-top: 1.5rem; /* Baja el select para alinear con el input de la izquierda */
+}
+
+/* En móviles, quitar el margen extra */
+@media (max-width: 768px) {
+  .cableado-select-group select {
+    margin-top: 0;
+  }
+}
